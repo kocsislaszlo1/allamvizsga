@@ -17,13 +17,13 @@
         <div class="col-md-6">
           <div class="details">
             <h2>{{ $speaker->name }}</h2>
-            <div class="social">
+            {{-- <div class="social">
               <a href="{{ $speaker->twitter }}"><i class="fa fa-twitter"></i></a>
               <a href="{{ $speaker->facebook }}"><i class="fa fa-facebook"></i></a>
               <a href="{{ $speaker->linkedin }}"><i class="fa fa-linkedin"></i></a>
             </div>
             <p>{{ $speaker->full_description }}</p>
-          </div>
+          </div> --}}
         </div>
       </div>
     </div>

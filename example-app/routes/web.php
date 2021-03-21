@@ -1,7 +1,6 @@
 <?php
-
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\HomeController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -17,6 +16,11 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/home', [HomeController::class, 'index'])->name('home');
+Route::get('speaker/{speaker}', [HomeController::class, 'view'])->name('speaker');
+//Route::get('/', 'HomeController@index')->name('home');
+//Route::redirect('/home', '/admin');
+Auth::routes();
+Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-//Route::get('/', 'HomeController@index')->name('home');

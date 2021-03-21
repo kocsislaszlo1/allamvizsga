@@ -9,7 +9,7 @@
     <div class="row justify-content-center">
       <div class="col-lg-9">
           <ul id="faq-list">
-            @foreach($faqs as $faq)
+             {{-- @foreach($faqs as $faq)
               <li>
                 <a data-toggle="collapse" class="collapsed" href="#faq{{ $faq->id }}">{{ $faq->question }} <i class="fa fa-minus-circle"></i></a>
                 <div id="faq{{ $faq->id }}" class="collapse" data-parent="#faq-list">
@@ -19,7 +19,7 @@
                 </div>
               </li>
             @endforeach
-  
+   --}}
           </ul>
       </div>
     </div>

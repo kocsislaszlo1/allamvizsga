@@ -5,7 +5,7 @@
 
         <div class="col-lg-3 col-md-6 footer-info">
           <img src="img/logo.png" alt="TheEvenet">
-          <p>{{ $settings['footer_description'] ?? '' }}</p>
+          {{-- <p>{{ $settings['footer_description'] ?? '' }}</p> --}}
         </div>
 
         <div class="col-lg-3 col-md-6 footer-links">
@@ -16,12 +16,12 @@
             <li><i class="fa fa-angle-right"></i> <a href="#">Services</a></li>
             <li><i class="fa fa-angle-right"></i> <a href="#">Terms of service</a></li>
             <li><i class="fa fa-angle-right"></i> <a href="#">Privacy policy</a></li>
-            @guest
+            {{-- @guest
               <li><i class="fa fa-angle-right"></i> <a href="{{ route('login') }}">Login</a></li>
             @endguest
             @auth
               <li><i class="fa fa-angle-right"></i> <a href="{{ route('admin.home') }}">Admin Panel</a></li>
-            @endauth
+            @endauth --}}
           </ul>
         </div>
 
@@ -36,16 +36,16 @@
             @guest
               <li><i class="fa fa-angle-right"></i> <a href="{{ route('login') }}">Login</a></li>
             @endguest
-            @auth
-              <li><i class="fa fa-angle-right"></i> <a href="{{ route('admin.home') }}">Admin Panel</a></li>
-            @endauth
+            {{-- @auth
+              {{-- <li><i class="fa fa-angle-right"></i> <a href="{{ route('admin.home') }}">Admin Panel</a></li> 
+            @endauth --}}
           </ul>
         </div>
 
-        <div class="col-lg-3 col-md-6 footer-contact">
+        {{-- <div class="col-lg-3 col-md-6 footer-contact">
           <h4>Contact Us</h4>
           <p>
-            {!! $settings['footer_address'] ?? '' !!}<br>
+            {{-- {!! $settings['footer_address'] ?? '' !!}<br> 
             <strong>Phone:</strong> {{ $settings['contact_phone'] }}<br>
             <strong>Email:</strong> {{ $settings['contact_email'] }}<br>
           </p>
@@ -58,7 +58,7 @@
             <a href="{{ $settings['footer_linkedin'] ?? '' }}" class="linkedin"><i class="fa fa-linkedin"></i></a>
           </div>
 
-        </div>
+        </div> --}}
 
       </div>
     </div>
