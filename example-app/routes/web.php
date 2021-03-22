@@ -21,6 +21,5 @@ Route::get('speaker/{speaker}', [HomeController::class, 'view'])->name('speaker'
 //Route::get('/', 'HomeController@index')->name('home');
 //Route::redirect('/home', '/admin');
 Auth::routes();
-Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
