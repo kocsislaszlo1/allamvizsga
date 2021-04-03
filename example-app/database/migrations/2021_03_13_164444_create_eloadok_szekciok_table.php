@@ -18,7 +18,7 @@ class CreateEloadokSzekciokTable extends Migration
             $table->unsignedBigInteger('eloado_id');
             $table->foreign('eloado_id')->references('id')->on('eloadok');
            $table->unsignedBigInteger('szekcio_id');
-             $table->foreign('szekcio_id')->references('szekcio_id')->on('szekciok');
+             $table->foreign('szekcio_id')->references('id')->on('szekciok');
         });
     }
 

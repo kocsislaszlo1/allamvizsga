@@ -18,7 +18,7 @@ class CreateModeratorokTable extends Migration
          $table->unsignedBigInteger('felhasznalo_id');
          $table->foreign('felhasznalo_id')->references('id')->on('users');
         $table->unsignedBigInteger('szekcio_id');
-          $table->foreign('szekcio_id')->references('szekcio_id')->on('szekciok');
+          $table->foreign('szekcio_id')->references('id')->on('szekciok');
         });
     }
 

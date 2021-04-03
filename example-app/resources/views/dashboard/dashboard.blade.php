@@ -7,9 +7,9 @@
 <div>
     <p>Vezérlőpult lehetőségek:</p>
     <ol>
-    	<li>Túrák, rendezvények létehozása, módosítása</li>
-    	<li>Túrabeszámolók, túrafotók feltöltése, módosítása</li>
-    	<li>Felhasználók kezelése: hozzáadás, jogosultságok beállítása</li>
+    	<li>Esemenyek létehozása, módosítása</li>
+    	<li>Szekciok, létehozása, módosítása</li>
+    	
     </ol>
 </div>
 

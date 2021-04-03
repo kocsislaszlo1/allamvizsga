@@ -9,7 +9,10 @@ class Moderatorok extends Model
 {
     use HasFactory;
     public $table = 'moderatorok';
-    
+    public $timestamps = false;
+    // protected $fillable = [
+    //      'id',
+    // ];
     public function users (){
         return $this->hasMany(User::class);
         

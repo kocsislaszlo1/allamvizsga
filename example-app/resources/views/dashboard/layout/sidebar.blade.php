@@ -23,27 +23,26 @@
             </a>
           </li>        
 
-          @can('create-rendezveny')
           <li class="nav-item menu-closed">
-            <a href="{{route('dashboard.rendezvenyek.index') }}" class="nav-link {{ (strpos(Route::currentRouteName(), 'dashboard.rendezvenyek') === 0) ? 'active' : '' }}" >
+             <a href="{{route('dashboard.esemenyek.index') }}" class="nav-link {{ (strpos(Route::currentRouteName(), 'dashboard.rendezvenyek') === 0) ? 'active' : '' }}" > 
               <i class="nav-icon fas fa-route"></i>
               <p>
-                Túrák, rendezvények
+              Esemenyek
               </p>
             </a>
           </li> 
-          @endcan   
+   
 
-          @can('create-beszamolo')
+       
           <li class="nav-item menu-closed">
-            <a href="{{ route('dashboard.beszamolok.index') }}" class="nav-link {{ (request()->is('dashboard/beszamolok*')) ? 'active' : '' }}">
+             <a href="{{ route('dashboard.szekciok.index') }}" class="nav-link {{ (request()->is('dashboard/beszamolok*')) ? 'active' : '' }}">
               <i class="nav-icon fas fa-file-alt"></i>
               <p>
-                Túrabeszámolók
+              Szekciok
               </p>
             </a>
           </li>
-          @endcan 
+      
 
           @can('create-dhtt')   
           <li class="nav-item has-treeview {{ (request()->is('dashboard/dhtt*')) ? 'menu-open' : '' }}">

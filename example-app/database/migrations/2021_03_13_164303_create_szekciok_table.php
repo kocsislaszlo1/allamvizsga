@@ -14,13 +14,13 @@ class CreateSzekciokTable extends Migration
     public function up()
     {
         Schema::create('szekciok', function (Blueprint $table) {
-            $table->id('szekcio_id');
+            $table->id('id');
             $table->string('szekcionev');
             $table->datetime('idopont');
             $table->string('link');
             $table->tinyInteger('online');
             $table->unsignedBigInteger('esemenyek_id');
-            $table->foreign('esemenyek_id')->references('id')->on('esemenyek');
+            $table->foreign('esemenyek_id')->references('id')->on('esemenyek')->onDelete('cascade');
         });
     }
 

@@ -11,19 +11,19 @@
 
       <div class="row">
         <div class="col-md-6">
-          <img src="{{ $speaker->photo->getUrl() }}" alt="{{ $speaker->name }}" class="img-fluid">
+          <img src="" class="img-fluid">
         </div>
 
         <div class="col-md-6">
           <div class="details">
-            <h2>{{ $speaker->name }}</h2>
-            {{-- <div class="social">
-              <a href="{{ $speaker->twitter }}"><i class="fa fa-twitter"></i></a>
-              <a href="{{ $speaker->facebook }}"><i class="fa fa-facebook"></i></a>
-              <a href="{{ $speaker->linkedin }}"><i class="fa fa-linkedin"></i></a>
+            <h2></h2>
+             <div class="social">
+              <a href=""><i class="fa fa-twitter"></i></a>
+              <a href=""><i class="fa fa-facebook"></i></a>
+              <a href=""><i class="fa fa-linkedin"></i></a>
             </div>
-            <p>{{ $speaker->full_description }}</p>
-          </div> --}}
+            <p></p>
+          </div> 
         </div>
       </div>
     </div>

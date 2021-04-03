@@ -39,7 +39,24 @@ class HomeController extends Controller
 
         return view('home');
     }
+    public function index2()
+    {
+        // //$settings = Setting::pluck('value', 'key');
+        // $speakers = Speaker::all();
+        // $schedules = Schedule::with('speaker')
+        //     ->orderBy('start_time', 'asc')
+        //     ->get()
+        //     ->groupBy('day_number');
+        // $venues = Venue::all();
+        // $hotels = Hotel::all();
+        // $galleries = Gallery::all();
+        // $sponsors = Sponsor::all();
+        // $faqs = Faq::all();
+        // $prices = Price::with('amenities')->get();
+        // $amenities = Amenity::with('prices')->get();
 
+        return view('dashboard.dashboard');
+    }
     public function view(Speaker $speaker)
     {
         $settings = Setting::pluck('value', 'key');

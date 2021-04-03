@@ -9,6 +9,10 @@ class Eloadok extends Model
 {
     use HasFactory;
     public $table = 'eloadok';
+    public $timestamps = false;
+    protected $fillable = [
+        'id', 'nev','fokozat','link','intezmeny','eloadascim','email'
+    ];
     public function eloado_szekciok (){
 
         return $this->belongsToMany(Szekciok::class);

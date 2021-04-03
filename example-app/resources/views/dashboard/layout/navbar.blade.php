@@ -11,9 +11,9 @@
     <ul class="navbar-nav ml-auto">
       <!-- Messages Dropdown Menu -->
       <li class="nav-item">
-        <a class="nav-link" href="#">
+         <a class="nav-link" href="#">
           {{ Auth::user()->name }}
-        </a>
+        </a> 
       </li>
       <!-- Notifications Dropdown Menu -->
       <li class="nav-item dropdown">
@@ -22,9 +22,9 @@
         </a>
         <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
           <div class="dropdown-divider"></div>
-          <a href="{{ route('dashboard.profil.index') }}" class="dropdown-item">
+           <a href="" class="dropdown-item">
             <i class="fas fa-key mr-2"></i> Jelszó változtatás
-          </a>
+          </a> 
           <div class="dropdown-divider"></div>
           <a href="{{ route('logout') }}" class="dropdown-item" onclick="event.preventDefault();
                     document.getElementById('logout-form').submit();">

@@ -9,9 +9,12 @@ class Esemenyek extends Model
 {
     use HasFactory;
     public $table = 'esemenyek';
+    public $timestamps = false;
+    protected $fillable = [
+        'esemenynev', 'tema','datum'
+    ];
 
     public function szekciok (){
-        return $this->hasMany(Szekciok::class);
-        
+        return $this->hasMany(Szekciok::class);      
     }
 }

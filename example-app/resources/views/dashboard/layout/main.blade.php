@@ -22,9 +22,9 @@
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
 
 
-  <!-- jQuery -->
-  <!--<script src="{{asset('lib2/adminlte2/plugins/jquery/jquery.min.js')}}"></script>-->
-  <!--<script src="https://ajax.googleapis.com/ajax/libs2/jquery/3.5.1/jquery.min.js"></script>-->
+ 
+ <script src="{{asset('lib2/adminlte2/plugins/jquery/jquery.min.js')}}"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   
      
         
@@ -33,8 +33,8 @@
   
   <script src="{{ asset('js/app.js') }}" defer></script>
 
-  <script src="https://ajax.googleapis.com/ajax/libs2/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs2/jquery-validate/1.19.2/jquery.validate.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.2/jquery.validate.js"></script>
   <!--<script src="{{asset('lib2/adminlte2/plugins/jquery/jquery.min.js')}}"></script>-->
 
 
@@ -103,7 +103,7 @@
     <!-- /.content-wrapper -->
 
 
-
+    @include('dashboard.layout.footer')
   </div>
 
 
